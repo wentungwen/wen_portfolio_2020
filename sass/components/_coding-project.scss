@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  width: 100%;
+  @include rwd(tab-port) {
+    flex-direction: column;
+    height: 70rem;
+  }
+
+  & .panel {
+    background-size: cover;
+    background: no-repeat center;
+    border-radius: 50px;
+    color: white;
+    height: 60vh;
+    /* flex屬性預設0.5，讓東西均分 */
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+
+    & a {
+      color: #fff;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.active {
+      flex: 5;
+
+      &:hover {
+        cursor: initial;
+      }
+      & h3 {
+        visibility: visible;
+        transition: opacity ease-in 0.3s;
+        background: #00000096;
+        letter-spacing: 2px;
+        border-radius: 10px;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+
+    & h3 {
+      position: absolute;
+      font-size: 1.5rem;
+      bottom: 10px;
+      left: 20px;
+      margin: 0;
+      visibility: hidden;
+      background: #00000096;
+      padding: 1.3rem 1.5rem;
+    }
+  }
+}
+.fa-arrow-right {
+  animation: arrow-horizontal 1.5s infinite ease-in-out;
+}
+// @media (max-width: 700px) {
+//   .container {
+//     width: 100vw;
+//   }
+//   .panel:nth-of-type(4),
+//   .panel:nth-of-type(5) {
+//     display: none;
+//   }
+// }

@@ -1,0 +1,34 @@
+*,
+*::after,
+*::before {
+  /* *本身沒有包含偽元素，要多選after&before */
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  scroll-behavior: smooth;
+  /* 希望預設值為10px，1rem=16px, 10px/16px=62.5% */
+  font-size: 62.5%;
+
+  @include rwd(phone) {
+    font-size: 37.25%; // 12x/16px
+  }
+  @include rwd(tab-port) {
+    font-size: 50%; // 11px/16px
+  }
+  @include rwd(tab-land) {
+    font-size: 62.5%; // 12x/16px
+  }
+  @include rwd(big-desktop) {
+    font-size: 75%; // 13px/16px
+  }
+}
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+  @include rwd(tab-port) {
+    padding: 0;
+    margin: 2rem;
+  }
+}

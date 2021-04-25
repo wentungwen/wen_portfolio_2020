@@ -1,0 +1,37 @@
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 70vw 100%, 0 80vh);
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 50vw 100%, 0 80vh);
+  position: relative;
+
+  &-case {
+    height: 80vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(68, 25, 0, 0.472),
+        rgba($color-primary-dark, 0.8),
+        rgba($color-primary, 0.8)
+      ),
+      url(../img/hero.jpg);
+  }
+
+  @include rwd(tab-port) {
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 50vw 95%, 0 80vh);
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    text-align: center;
+  }
+}

@@ -1,0 +1,119 @@
+.btn {
+  &:hover {
+    transform: translateY(-3px);
+    padding: 2rem 5rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  }
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: all 0.2s;
+    position: relative;
+    font-size: $default-font-size;
+  }
+  &--white {
+    background-color: rgb(255, 255, 255);
+    color: #777;
+    margin-top: 1rem;
+    display: inline-block;
+
+    &::after {
+      background-color: rgb(255, 255, 255);
+    }
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  &:hover::after {
+    transform: scale(1.5);
+    opacity: 0;
+    transition: 0.4s;
+  }
+  &--animate {
+    animation: moveInBottom 0.4s ease-in-out 0.5s;
+    animation-fill-mode: backwards;
+  }
+}
+
+.btn-text {
+  margin: 0.2rem 0;
+  &:link,
+  &:visited {
+    font-size: $default-font-size;
+    color: $color-primary;
+    text-decoration: none;
+    display: inline-block;
+    // border-bottom: 1px solid $color-primary;
+    padding: 1rem 1.5rem;
+    transition: 0.2s;
+
+    margin-top: 1rem;
+  }
+
+  &:active {
+    transform: scale(0.97);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+  }
+}
+
+.section-features_nav {
+  // background-color: $color-grey-dark;
+
+  .btn-secondary {
+    width: calc(100% / 3);
+    height: 100%;
+    padding: 0.8rem 1rem;
+    color: $color-grey-dark;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    background-color: #f7f7f7;
+    border: 0.5px solid #eeeeee;
+    border-bottom: 3px solid #e7e7e7;
+
+    &:hover {
+      transition: border 0.2s;
+      transform: translateY(-3px);
+      border-bottom: 3px solid $color-primary-dark;
+      cursor: pointer;
+      color: $color-primary-dark;
+    }
+    &:active {
+      transform: translateY(-1px);
+      border-bottom: 3px solid $color-primary-dark;
+      color: $color-primary-dark;
+    }
+    &:focus {
+      outline: none;
+      border-bottom: 3px solid $color-primary-dark;
+      color: $color-primary-dark;
+    }
+
+    &:link,
+    &:visited {
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 1.5rem 4rem;
+      border-radius: 10rem;
+      transition: all 0.2s;
+      position: relative;
+      font-size: $default-font-size;
+    }
+  }
+}

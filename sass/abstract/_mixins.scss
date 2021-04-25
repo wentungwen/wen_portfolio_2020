@@ -1,0 +1,48 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin heading($size, $weight, $color) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  text-transform: uppercase;
+}
+
+// @mixin rwd-phone {
+//   @media (max-width: 600px) {
+//     @content;
+//   }
+// }
+
+// @include rwd-phone {
+//   font-size: 50%;
+// }
+// 跟下面一樣
+
+@mixin rwd($breakpoint) {
+  @if $breakpoint==phone {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint==tab-port {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint==tab-land {
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint==big-desktop {
+    @media (min-width: 75em) {
+      @content;
+    }
+  }
+}

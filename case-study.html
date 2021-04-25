@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="sass/main.css" />
+    <link rel="shortcut icon" type="image/png" href="img/logo/favicon.png" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/4d9a4d7f8c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/vue"></script>
+
+    <title>WenTung | case study</title>
+  </head>
+
+  <body class="dark">
+    <header class="header header-case" id="header">
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">case study</span>
+          <span class="heading-primary--sub">more details </span>
+        </h1>
+      </div>
+    </header>
+    <nav class="nav-pc" id="nav-pc">
+      <div class="container">
+        <a href="#">
+          <img src="img/logo/logo-white.png" alt="Logo" class="logo" />
+        </a>
+        <ul>
+          <li><a href="#case-study1" class="active">case 1</a></li>
+          <li><a href="#case-study2">case 2</a></li>
+          <li><a href="#case-study3">case 3</a></li>
+          <!-- <li><a href="#coding">PROJECT</a></li> -->
+        </ul>
+      </div>
+    </nav>
+    <nav class="nav-mobile" id="nav-mobile">
+      <div class="nav-mobile__container">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+
+    <div class="menu-model">
+      <a href="#case-study1">case 1</a>
+      <a href="#case-study2">case 2</a>
+      <a href="#case-study3">case 3</a>
+      <!-- <a href="#coding">PROJECT</a> -->
+    </div>
+    <main id="main" class="case-study">
+      <!-- ability -->
+      <!-- case 4 maynooth  -->
+      <section id="case-study4" class="case-study4">
+        <div class="row">
+          <div class="col-1-of-4">
+            <img
+              :src="ability[0].case[3].img"
+              :alt="ability[0].case[3].title"
+              class="case-img"
+            />
+          </div>
+          <div class="col-3-of-4">
+            <p>
+              <strong>{{ability[0].case[3].title}}</strong>
+              <br />{{ability[0].case[3].descript}}
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div
+                v-for="(n, idx) in caseImg.case4"
+                class="swiper-slide"
+                :style="{backgroundImage:n, backgroundSize:'contain', backgroundPosition:'center', backgroundRepeat:'no-repeat'}"
+              ></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </section>
+      <!-- case 2 design-thinking -->
+      <section id="case-study2" class="case-study2">
+        <div class="case-study2-1">
+          <div class="row">
+            <div class="col-1-of-4">
+              <img
+                :src="ability[0].case[1].img"
+                :alt="ability[0].case[1].title"
+                class="case-img"
+              />
+            </div>
+            <div class="col-3-of-4">
+             
+                <h2>{{ability[0].case[1].title}}</h2>
+                <p>我在上「設計思考」時，同時也在麥肯廣告策略部實習。我發現設計顧問和廣告策略所提的「洞察」，有極大的不同。</p>
+                <ul>
+                  <li><strong>流程方面：</strong>顧問通常會做大量調研後推論出洞察，策略會先假設洞察再做調研證明。</li>
+                  <li><strong>調研方面：</strong>顧問十分看重「質化調查」，推崇深度訪談、當面觀察使用者；策略更加偏重「量化調查」，如GWI、東方線上等等的大數據資料庫。</li>                 
+                </ul>
+                <p>
+                  這種現象讓我十分感興趣，我後來與林所長討論之後，一致認為是因為目標族群的差異，顧問是真正要解決客戶問題，所以他的角色更像是一個「研究者」，而廣告代理商當務之急是拿下比稿，角色較偏向「說客」。
+                </p>
+                <p>
+                  認識到這點後，我突然明白為何我對「設計思考」情有獨鍾，我一向喜歡個體心理學、消費者心理、和行為經濟學，而「設計思考」是一種讓研究實用化的思考模式，不空談、不廢話，我期許自己成為一個生活研究員，讓可以被實現的創新，迭代整個社會。
+                </p>
+             
+            </div>
+          </div>
+          <div class="row">
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div
+                  v-for="(n, idx) in caseImg.case2"
+                  class="swiper-slide"
+                  :style="{backgroundImage:n,backgroundRepeat:'no-repeat', backgroundSize:'contain', backgroundPosition:'center'}"
+                ></div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+
+              <!-- If we need scrollbar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- case 3 side project  -->
+      <section id="case-study3" class="case-study3">
+        <div class="row">
+          <div class="col-1-of-4">
+            <img
+              :src="ability[0].case[2].img"
+              :alt="ability[0].case[2].title"
+              class="case-img"
+            />
+          </div>
+          <div class="col-3-of-4">
+           
+              <h2>{{ability[0].case[2].title}}</h2>
+              <p>
+                在第一份工作時，我自學Javascript，下班時常逛軟體工程師社團。<br/>
+                我發現了一些有趣的事情：很多人在請教side project題目，但是side project普遍美感和易用性低，也不太實用，且若UI/UX設計師來前端找合作，迴響都相當熱烈。 </p>
+<p>基於好奇，我決定做個市場分析和訪談。利用IMC課學到的訪談法，訪到第十二個人時，我越來越知道該怎麼「提煉」出insight。
+  一開始，我先入為主地認為TA應為「在職設計師」與「初階工程師」，做side project目的是要累積作品。但經由訪談後發現：</p>
+  <ul>
+    <li> <strong> 初階</strong>：剛入行並無法製作出完整產品，通常刷題或上課居多（非TA）</li>
+    <li><strong>中階</strong>：工作兩三年後，技能樹已半定型，會想培養新技能以找到更好的工作</li>
+    <li><strong>中階偏資深</strong>：工程師通常會希望產品有興趣或可營利，且會找熟人合作居多（非TA）</li>
+  </ul>
+<p>
+  <br>
+  <strong>但設計師社團那麼多，找人合作很困難嗎？</strong><br>
+  是的，因為阻力過大，並非所有人都有勇氣在一兩萬人的社團po文。令我更意外的是，不只一個工程師認為設計師要錢，甚至願意花錢訂閱設計稿。而這些有趣的洞察，若非一直追根究底是挖掘不出來的。
+</p>
+
+
+<p>
+我訂定了目標「side project 共創所」，是一個媒合設計師、工程師、PM的平台。主要解決三大問題：
+找到不同專業的同伴，創造有價值的side project；有地方可以推廣自己的side project，也希望讓使用者自己提出想要的點子
+</p> <br>
+<p> 測試驗證階段，在做了兩輪的訪談驗證，有收到的回饋包含：</p>
+<ul>
+  <li>1. 召集第一批使用者時，必須拿掉押金制度</li>
+  <li>2. 不建議使用完成度，難以區分</li>
+  <li>3. 留住造訪但不確定主題的工程師：提供side project題目幫助媒合、有些人會想要優化或是練習他人專案，所以加上tag減少壓力：練習、優化、原創</li>
+  <li>4. 將點子牆改成許願池，以解決提供點子者沒有好處的問題。</li>
+</ul>
+
+
+<p>
+  目前還在prototype的階段，未來會交由工程師依流量估價，這也是我的一個有趣的side project，很期待他未來的發展。
+</p>
+
+
+
+           
+          </div>
+        </div>
+        <div class="row">
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div
+                v-for="(n, idx) in caseImg.case3"
+                class="swiper-slide"
+                :style="{backgroundImage:n,backgroundRepeat:'no-repeat', backgroundSize:'contain', backgroundPosition:'center'}"
+              ></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- case 1 corner -->
+      <section id="case-study1" class="case-study1">
+        <div class="case-study1-1">
+          <div class="row">
+            <div class="col-1-of-4">
+              <img
+                :src="ability[0].case[0].img"
+                :alt="ability[0].case[0].title"
+                class="case-img"
+              />
+            </div>
+            <div class="col-3-of-4">
+             
+                <h2>{{ability[0].case[0].title}}</h2>
+               
+              
+              <p>
+                這是在政大推動「國際角落」時製作的懶人包，雖然這個語文交換活動僅運作一個學期，便交由政大宿服會經營，但有成功經營至今，這也讓我思考一些問題。<br /><br />
+                <ul>
+                  <li> <strong> 活動內容的貧乏</strong>：一開始外籍生與本地生各半，但因為活動沒有太多內容，所以外籍生陷入無止盡的自我介紹窘境，而語文交換也變成單方面的拷問。雖然有實行半小時換桌、在特殊節日發小卡或紅包等等，但仍遠遠不足。</li><br />
+                  <li><strong>缺少執行單位與場地</strong>：一開始的場地是跟藝文中心咖啡廳借用，我沒有考慮到預算問題，宣傳管道等等。雖然在第二場後有找到願意幫忙的志工，但仍非常態性幫忙，整體規劃也無組織。</li><br />
+                  <li><strong>文化差異</strong>：在歐美的language table不算少見，但我沒有考慮到文化差異。在歐美，英文是強勢語言；但在台灣，英文仍是強勢語言，我們會配合外籍生說英文，但不會期待他們說中文。在語言勢力不對等的狀況下，語言桌是極難運作的。</li>
+                </ul>
+                
+                
+                
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div
+                  v-for="(n, idx) in caseImg.case1"
+                  class="swiper-slide"
+                  :style="{backgroundImage:n,backgroundRepeat:'no-repeat', backgroundSize:'contain', backgroundPosition:'center'}"
+                ></div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+
+              <!-- If we need scrollbar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="section-footer">
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="header__logo-box">
+              <img src="img/logo/favicon.png" alt="Logo" class="header__logo" />
+            </div>
+          </div>
+          <div class="col-2-of-3">
+            <a href="https://github.com/wentungwen" target="_blank">
+              <i class="fab fa-github"> Github</i>
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100005047210869"
+              target="_blank"
+            >
+              <i class="fab fa-facebook"> Facebook</i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/wen-tung-wen-02ba10198/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"> Linkedin</i>
+            </a>
+            <a>
+              <i class="fas fa-envelope"> wentungwen@gmail.com</i>
+            </a>
+          </div>
+        </div>
+      </footer>
+      <input type="text" class="password" id="password" autocomplete="off" />
+      <div class="row secret-row" id="secret-row"></div>
+    </main>
+  </body>
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- vue-loader -->
+  <script src="https://unpkg.com/vue"></script>
+
+  <!-- json -->
+  <script type="text/javascript" src="js/data.js"></script>
+  <!-- component -->
+  <!-- <script type="text/javascript" src="js/component.js"></script> -->
+  <!-- js -->
+  <script type="text/javascript" src="js/script.js"></script>
+  <!-- <script type="text/javascript" src="js/extra_page.js"></script>
+  <script type="text/javascript" src="js/ajax.js"></script> -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/case.js" type="text/javascript"></script>
+</html>

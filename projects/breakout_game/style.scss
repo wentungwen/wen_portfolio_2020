@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --primary-light: rgb(255, 255, 255);
+  --primary-dark: #104f5f;
+}
+
+@mixin font($a, $b, $c) {
+  font-weight: $a;
+  font-size: $b;
+  color: $c;
+}
+
+%flexBasic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+%buttonText {
+  button {
+    border: none;
+    padding: 8px 12px;
+    letter-spacing: 1px;
+    background-color: var(--primary-dark);
+    width: 12rem;
+    margin: 0.5rem 0;
+    text-align: left;
+    @include font(300, 1.1rem, var(--primary-light));
+    text-align: center;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+      transition: 0.2s;
+    }
+    &:focus,
+    &:active {
+      outline: 0;
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(39, 172, 177);
+  font-family: "Montserrat";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  @extend %buttonText;
+}
+
+canvas {
+  background-color: #fff;
+  border-radius: 10px;
+  display: block;
+}
+h1 {
+  color: #fff;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.rules-btn {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.rules {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  color: #fff;
+  min-height: 100vh;
+  padding: 2rem;
+  width: 400px;
+  transform: translateX(-400px);
+  transition: 0.3s ease-in;
+  & .btn {
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 3rem;
+    right: 2rem;
+  }
+  &.active {
+    transform: translateX(0px);
+    transition: 0.3s ease-in;
+  }
+}

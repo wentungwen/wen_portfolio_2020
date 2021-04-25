@@ -1,0 +1,113 @@
+.feature-box {
+  background-color: rgba($color-white, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  transition: 0.4s;
+
+  &__icon {
+    font-size: 6rem;
+    margin-bottom: 2rem;
+    color: transparent;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    );
+    -webkit-background-clip: text;
+  }
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+  }
+
+  &__skill {
+    text-align: left;
+    position: relative;
+
+    & ul {
+      color: rgba($color-primary-dark, 0.8);
+      list-style: none;
+      font-size: $default-font-size-bigger;
+
+      & li {
+        border-left: 1px solid rgba($color-primary-dark, 0.8);
+        padding-left: 1rem;
+        &.highlight {
+          color: rgb(59, 59, 59);
+          border-left: rgb(59, 59, 59) solid 1px;
+        }
+      }
+
+      & li:hover .fa-star {
+        transition: font-size 0.1s ease-in;
+        backface-visibility: hidden;
+        font-size: 1.5rem;
+      }
+      & li:hover {
+        cursor: pointer;
+      }
+    }
+
+    & .fa-star {
+      float: right;
+      letter-spacing: 0.5rem;
+      font-size: 1.3rem;
+    }
+
+    & .fa {
+      float: right;
+    }
+    & .feature-box_skill {
+      &--design {
+        margin: 2rem 0;
+      }
+      &--lan {
+        float: right;
+      }
+    }
+  }
+}
+
+.ability {
+  & ul {
+    list-style: none;
+    font-size: $default-font-size;
+    & li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    & li:hover .fa-star {
+      transition: font-size 0.1s ease-in;
+      backface-visibility: hidden;
+      font-size: 1.5rem;
+    }
+    & li:hover {
+      cursor: pointer;
+    }
+  }
+
+  & .fa-star {
+    float: right;
+    letter-spacing: 0.5rem;
+    font-size: 1.3rem;
+  }
+
+  & .fa {
+    float: right;
+  }
+}
+.star-box {
+  padding: 1.2rem;
+  // background-image: linear-gradient(
+  //   45deg,
+  //   $color-primary-dark,
+  //   $color-primary-light
+  // );
+  border: 1px solid $color-grey-dark;
+  border-radius: 5px;
+}

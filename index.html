@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- <link rel="stylesheet" href="css/icon-font.css" /> -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="sass/main.css" />
+    <link rel="shortcut icon" type="image/png" href="img/logo/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/4d9a4d7f8c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/vue"></script>
+
+    <title>WenTung | Creative Resume</title>
+  </head>
+
+  <body class="dark">
+    <header class="header" id="header">
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">{{name}}</span>
+          <span class="heading-primary--sub">{{sub}} </span>
+        </h1>
+      </div>
+    </header>
+    <nav class="nav-pc" id="nav-pc">
+      <div class="container">
+        <a href="#">
+          <img src="img/logo/logo-white.png" alt="Logo" class="logo" />
+        </a>
+        <ul>
+          <li><a href="#about" class="active">ABOUT</a></li>
+          <li><a href="#education">EXPERIENCE</a></li>
+          <li><a href="#ability">ABILITY</a></li>
+          <li><a href="#coding">PROJECT</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="nav-mobile" id="nav-mobile">
+      <div class="nav-mobile__container">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+
+    <div class="menu-model">
+      <a href="#about">ABOUT</a>
+      <a href="#education">EXPERIENCE</a>
+      <a href="#ability">ABILITY</a>
+      <a href="#coding">PROJECT</a>
+    </div>
+    <main id="main">
+      <section class="section-about" id="about">
+        <!-- <intro>aa</intro> -->
+        <div class="u-center-text u-margin-bottom-big title-box">
+          <h2 class="heading-secondary" id="head1">{{head[0]}}</h2>
+          <i class="icon-basic-diamonds secondary-icon"></i>
+          <p>{{descript[0]}}</p>
+        </div>
+        <div class="row">
+          <div class="col-1-of-3">
+            <h2 class="u-margin-bottom-small block-text">
+              {{about[0].titleName}}
+            </h2>
+            <p class="paragraph">{{about[0].descript1}}</p>
+            <p class="paragraph">{{about[0].descript2}}</p>
+
+            <!-- <a href="#" class="btn-text">Learn more &rarr;</a> -->
+          </div>
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture-1">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--1"
+                    >wentung</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>溫文彤｜22y</li>
+                    <li>Tapei, Taiwan</li>
+                    <!-- <li>2 tours guides</li> -->
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-1">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <div class="card__price-only">Info</div>
+                    <ul>
+                      <li>wentungwen@gmail.com</li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                    <!-- <div class="card__price-value">$120</div> -->
+                    <!-- <a href="#" class="btn btn--white">Contact me</a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <h2 class="u-margin-bottom-small block-text">
+              {{about[1].titleName}}
+            </h2>
+            <p class="paragraph">{{about[1].descript1}}</p>
+            <p class="paragraph">{{about[1].descript2}}</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- experience -->
+      <section class="section-edu" id="experience">
+        <div class="u-center-text u-margin-bottom-big title-box">
+          <h2 class="heading-secondary">{{head[1]}}</h2>
+          <i class="icon-basic-diamonds secondary-icon"></i>
+          <p>{{descript[1]}}</p>
+        </div>
+        <div class="row" v-for="(n, idx) in schoolList">
+          <div class="col-1-of-3">
+            <h3>{{n.title}}</h3>
+            <small>{{n.date}}</small>
+          </div>
+          <div class="col-2-of-3">
+            <p>{{n.descript}}</p>
+            <a href=""> <i class="fas fa-map-marker"> {{n.locationName}}</i></a>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <section class="section-exp">
+        <div class="row" v-for="(n, idx) in expList">
+          <div class="col-1-of-3">
+            <h3>{{n.title}}</h3>
+            <small>{{n.date}}</small>
+          </div>
+          <div class="col-2-of-3">
+            <p>{{n.descript}}</p>
+            <a href=""> <i class="fas fa-map-marker"> {{n.locationName}}</i></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ability -->
+      <section id="ability" class="row section-features">
+        <div
+          class="u-center-text u-margin-top-med u-margin-bottom-med title-box"
+        >
+          <h2 class="heading-secondary">{{head[2]}}</h2>
+          <i class="icon-basic-diamonds secondary-icon"></i>
+          <p>{{descript[2]}}</p>
+        </div>
+      </section>
+
+      <!-- commercial -->
+      <section class="section-uxui_p" id="coding">
+        <!-- <div class="row">
+          <div class="col-1-of-3">
+            <div class="abi-title__num u-text-white">{{ability[1].num}}</div>
+            <h3 class="abi-title">{{ability[1].title}}</h3>
+            <small>{{ability[1].sub}}</small>
+          </div>
+          <div class="col-2-of-3">
+            <p>
+              <strong>{{ability[1].sub2}}</strong> <br />{{ability[1].descript}}
+            </p>
+          </div>
+        </div> -->
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="abi-title__num">{{ability[0].num}}</div>
+            <h3 class="abi-title">{{ability[0].title}}</h3>
+            <small>{{ability[0].sub}}</small>
+          </div>
+          <div class="col-2-of-3">
+            <div class="icon-container icon-container__instruction">
+              <li>
+                <i class="fas fa-street-view"></i>
+                <div>Discover 發現</div>
+              </li>
+              <li>
+                <i class="fas fa-question-circle"></i>
+                <div>Define 定義</div>
+              </li>
+              <li>
+                <i class="fas fa-lightbulb"></i>
+                <div>Solution 解法</div>
+              </li>
+              <li>
+                <i class="fas fa-flag"></i>
+                <div>Result 結果</div>
+              </li>
+            </div>
+          </div>
+        </div>
+        <!-- case 1 corner -->
+        <div class="row">
+          <div class="col-1-of-3">
+            <img
+              :src="ability[0].case[0].img"
+              :alt="ability[0].case[0].title"
+              class="case-img"
+            />
+          </div>
+          <div class="col-2-of-3">
+            <p>
+              <strong>{{ability[0].case[0].title}}</strong>
+              <br />{{ability[0].case[0].descript}}
+            </p>
+            <div class="icon-container">
+              <li>
+                <i class="fas fa-street-view"></i>
+                <div>{{ability[0].case[0].details[0]}}</div>
+              </li>
+              <li>
+                <i class="fas fa-question-circle"></i>
+                <div>{{ability[0].case[0].details[1]}}</div>
+              </li>
+              <li>
+                <i class="fas fa-lightbulb"></i>
+                <div>{{ability[0].case[0].details[2]}}</div>
+              </li>
+              <li>
+                <i class="fas fa-flag"></i>
+                <div>{{ability[0].case[0].details[3]}}</div>
+              </li>
+            </div>
+          </div>
+        </div>
+
+        <!-- case 2 design-thinking -->
+        <div class="row">
+          <div class="col-1-of-3">
+            <img
+              :src="ability[0].case[1].img"
+              :alt="ability[0].case[1].title"
+              class="case-img"
+            />
+          </div>
+          <div class="col-2-of-3">
+            <p>
+              <strong>{{ability[0].case[1].title}}</strong>
+              <br />{{ability[0].case[1].descript}}
+            </p>
+            <div class="icon-container">
+              <li>
+                <i class="fas fa-street-view"></i>
+                <div>{{ability[0].case[1].details[0]}}</div>
+              </li>
+              <li>
+                <i class="fas fa-question-circle"></i>
+                <div>{{ability[0].case[1].details[1]}}</div>
+              </li>
+              <li>
+                <i class="fas fa-lightbulb"></i>
+                <div>{{ability[0].case[1].details[2]}}</div>
+              </li>
+              <li>
+                <i class="fas fa-flag"></i>
+                <div>{{ability[0].case[1].details[3]}}</div>
+              </li>
+            </div>
+          </div>
+        </div>
+        <!-- case 3 side project  -->
+        <div class="row">
+          <div class="col-1-of-3">
+            <img
+              :src="ability[0].case[2].img"
+              :alt="ability[0].case[2].title"
+              class="case-img"
+            />
+          </div>
+          <div class="col-2-of-3">
+            <p>
+              <strong>{{ability[0].case[2].title}}</strong>
+              <br />{{ability[0].case[2].descript}}
+            </p>
+            <div class="icon-container">
+              <li>
+                <i class="fas fa-street-view"></i>
+                <div>{{ability[0].case[2].details[0]}}</div>
+              </li>
+              <li>
+                <i class="fas fa-question-circle"></i>
+                <div>{{ability[0].case[2].details[1]}}</div>
+              </li>
+              <li>
+                <i class="fas fa-lightbulb"></i>
+                <div>{{ability[0].case[2].details[2]}}</div>
+              </li>
+              <li>
+                <i class="fas fa-flag"></i>
+                <div>{{ability[0].case[2].details[3]}}</div>
+              </li>
+            </div>
+          </div>
+        </div>
+        <!-- case 4 maynooth  -->
+        <div class="row">
+          <div class="col-1-of-3">
+            <img
+              :src="ability[0].case[3].img"
+              :alt="ability[0].case[3].title"
+              class="case-img"
+            />
+          </div>
+          <div class="col-2-of-3">
+            <p>
+              <strong>{{ability[0].case[3].title}}</strong>
+              <br />{{ability[0].case[3].descript}}
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <a href="#" class="btn btn-text"
+            >More details&nbsp; <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+      </section>
+      <!-- coding -->
+      <section class="section-coding_p u-margin-top-med" id="coding">
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="abi-title__num u-text-white">{{ability[1].num}}</div>
+            <h3 class="abi-title">{{ability[1].title}}</h3>
+            <small>{{ability[1].sub}}</small>
+          </div>
+          <div class="col-2-of-3">
+            <p>
+              <strong>{{ability[1].sub2}}</strong> <br />{{ability[1].descript}}
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-3" v-for="(n, idx) in works">
+            <a :href="n.link" target="_blank" class="btn-text">
+              <div
+                class="story story-img composition__photo"
+                :style="{background: n.img}"
+              >
+                <div class="story__text">
+                  <!-- <h3 class="heading-tertiary">{{n.title}}</h3> -->
+                  <p>{{n.descript}}<br /></p>
+                </div></div
+            ></a>
+          </div>
+        </div>
+      </section>
+      <!-- design -->
+
+      <section class="section-design_p u-margin-top-med" id="design">
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="abi-title__num">{{ability[2].num}}</div>
+            <h3 class="abi-title">{{ability[2].title}}</h3>
+            <small>{{ability[2].sub}}</small>
+          </div>
+          <div class="col-2-of-3">
+            <p>
+              <strong>{{ability[2].sub2}}</strong> <br />{{ability[2].descript}}
+            </p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div
+            v-for="(n, idx) in designs"
+            class="panel"
+            :style="{backgroundImage:n.img, backgroundSize:'cover'}"
+          >
+            <a :href="n.link" target="_blank">
+              <h3>
+                {{n.title}} &nbsp;
+                <i class="fas fa-arrow-right"></i>
+              </h3>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="section-footer">
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="header__logo-box">
+              <img src="img/logo/favicon.png" alt="Logo" class="header__logo" />
+            </div>
+          </div>
+          <div class="col-2-of-3">
+            <a href="https://github.com/wentungwen" target="_blank">
+              <i class="fab fa-github"> Github</i>
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100005047210869"
+              target="_blank"
+            >
+              <i class="fab fa-facebook"> Facebook</i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/wen-tung-wen-02ba10198/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"> Linkedin</i>
+            </a>
+            <a>
+              <i class="fas fa-envelope"> wentungwen@gmail.com</i>
+            </a>
+          </div>
+        </div>
+      </footer>
+      <input type="text" class="password" id="password" autocomplete="off" />
+      <div class="row secret-row" id="secret-row"></div>
+    </main>
+  </body>
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- vue-loader -->
+  <script src="https://unpkg.com/vue"></script>
+
+  <!-- json -->
+  <script type="text/javascript" src="js/data.js"></script>
+  <!-- component -->
+  <script type="text/javascript" src="js/component.js"></script>
+  <!-- js -->
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/extra_page.js"></script>
+  <script type="text/javascript" src="js/ajax.js"></script>
+</html>

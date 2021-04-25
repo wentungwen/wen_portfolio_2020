@@ -1,0 +1,135 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: $default-font-size;
+  line-height: 1.7;
+  color: #777777;
+}
+
+.heading-primary {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  /* backface-visibility: hidden;用在修正抖動 */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  &--main {
+    display: block;
+    font-size: 7rem;
+    font-weight: 100;
+    letter-spacing: 3.5rem;
+    -webkit-animation: moveInLeft;
+    animation: moveInLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+
+    @include rwd(phone) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
+  }
+
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1.8rem;
+    -webkit-animation: moveInRight;
+    animation: moveInRight;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+  }
+}
+
+.heading-secondary {
+  font-size: 9rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 1.5rem;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.2s;
+
+  @include rwd(tab-port) {
+    font-size: 4rem;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+  }
+
+  & p {
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+  }
+}
+
+.heading-tertiary {
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.paragraph {
+  font-size: $default-font-size;
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+
+.section-features {
+  & .heading-secondary {
+    color: #fff;
+  }
+  & .title-box p {
+    color: #fff6a9d6;
+  }
+
+  & .title-box .secondary-icon {
+    color: #ffffff;
+  }
+}
+.block-text {
+  color: #000000a3;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.fa-map-marker {
+  color: #496db1;
+}
+.abi-title {
+  color: $color-primary-dark;
+  letter-spacing: 2px;
+
+  &__num {
+    position: absolute;
+    font-size: 44rem;
+    top: -23rem;
+    color: #f7c318;
+    font-weight: 400;
+    opacity: 0.1;
+    left: 10rem;
+    z-index: -1;
+  }
+  & + small {
+    color: $color-primary-dark;
+    letter-spacing: 1px;
+  }
+}
+.section-coding_p .abi-title__num {
+  z-index: 1;
+  top: -20rem;
+}
+.section-design_p .abi-title__num {
+  top: -25rem;
+}
