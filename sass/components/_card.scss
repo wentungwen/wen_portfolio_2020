@@ -84,29 +84,29 @@
           $color-secondary-dark,
           $color-secondary-light
         ),
-        url(../../img/about-pic.jpg);
+        url(../img/about-pic.jpg);
       // clip-path: polygon(0 0, 0 88%, 23% 100%, 100% 85%, 100% 0);
     }
 
-    &-2 {
-      background-image: linear-gradient(
-          to right bottom,
-          $color-primary-dark,
-          $color-primary-light
-        ),
-        url(../../img/nat-4.jpg);
-      clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
-    }
+    // &-2 {
+    //   background-image: linear-gradient(
+    //       to right bottom,
+    //       $color-primary-dark,
+    //       $color-primary-light
+    //     ),
+    //     url(../../img/nat-4.jpg);
+    //   clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
+    // }
 
-    &-3 {
-      background-image: linear-gradient(
-          to right bottom,
-          $color-tertiary-dark,
-          $color-tertiary-light
-        ),
-        url(../../img/nat-3.jpg);
-      clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
-    }
+    // &-3 {
+    //   background-image: linear-gradient(
+    //       to right bottom,
+    //       $color-tertiary-dark,
+    //       $color-tertiary-light
+    //     ),
+    //     url(../../img/nat-3.jpg);
+    //   clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
+    // }
   }
   &__heading {
     padding: 5px;

@@ -272,12 +272,17 @@ body {
   margin-bottom: 2rem;
 }
 
+.title-box p {
+  letter-spacing: 5px !important;
+}
+
 .section-features .heading-secondary {
   color: #fff;
 }
 
 .section-features .title-box p {
   color: #fff6a9d6;
+  letter-spacing: 5px;
 }
 
 .section-features .title-box .secondary-icon {
@@ -288,6 +293,7 @@ body {
   color: #000000a3;
   text-transform: uppercase;
   display: inline-block;
+  letter-spacing: 1px;
 }
 
 .fa-map-marker {
@@ -313,6 +319,11 @@ body {
 .abi-title + small {
   color: #ff7730;
   letter-spacing: 1px;
+}
+
+.abi-case-img {
+  width: 100%;
+  margin: 5rem auto;
 }
 
 .section-coding_p .abi-title__num {
@@ -418,8 +429,8 @@ body {
 .section-features {
   margin-top: -10rem;
   padding: 10rem 0;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 185, 0, 0.8)), to(rgba(255, 119, 48, 0.8))), url(../../img/ability-bg.jpg);
-  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8)), url(../../img/ability-bg.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 185, 0, 0.8)), to(rgba(255, 119, 48, 0.8))), url(../img/ability-bg.jpg);
+  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8)), url(../img/ability-bg.jpg);
   background-attachment: fixed;
   margin-bottom: 0 !important;
   max-width: 100% !important;
@@ -1037,22 +1048,8 @@ body {
 }
 
 .card__picture-1 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#3b3b3b), to(#ff7730)), url(../../img/about-pic.jpg);
-  background-image: linear-gradient(to right bottom, #3b3b3b, #ff7730), url(../../img/about-pic.jpg);
-}
-
-.card__picture-2 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#ff7730), to(#ffb900)), url(../../img/nat-4.jpg);
-  background-image: linear-gradient(to right bottom, #ff7730, #ffb900), url(../../img/nat-4.jpg);
-  -webkit-clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
-          clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
-}
-
-.card__picture-3 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#4c199e), to(#2998ff)), url(../../img/nat-3.jpg);
-  background-image: linear-gradient(to right bottom, #4c199e, #2998ff), url(../../img/nat-3.jpg);
-  -webkit-clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
-          clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#3b3b3b), to(#ff7730)), url(../img/about-pic.jpg);
+  background-image: linear-gradient(to right bottom, #3b3b3b, #ff7730), url(../img/about-pic.jpg);
 }
 
 .card__heading {
@@ -1296,7 +1293,6 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  font-size: 1.1rem;
 }
 
 .icon-container__instruction li {

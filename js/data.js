@@ -2,28 +2,18 @@ new Vue({
   el: "#header",
   data: {
     name: "WENTUNG",
-    sub: "creative resume",
+    sub: "hello world!",
   },
 });
 
 new Vue({
   el: "#main",
   data: {
-    head: [
-      "about",
-      "experience",
-      "ability",
-      "Coding project",
-      "Web Design",
-      "contact",
-    ],
+    head: ["about", "experience", "ability"],
     descript: [
-      "about",
-      "experience",
-      "abilities",
-      "my works",
-      "works",
-      "contact",
+      "我是個怎樣的人？",
+      "我學過、經歷過什麼？",
+      "我能為你們做什麼？",
     ],
     about: [
       {
@@ -107,7 +97,7 @@ new Vue({
           {
             title: " 四、International Corner 國際角落",
             descript:
-              "lorem成品是在大二時，我成立了國際角落；第二次接觸「設計思考」，我發現我要做的東西。第三次，我在工作中發現了一些需求，我搜集了資料並發想了「side project共創所",
+              "我對觀察人群和解決問題十分熱衷。大二下時，我發現外籍生和本國生很難交集的痛點，於是我在政大舉辦一週一次的語文交換活動「國際角落」，這讓我完整運用到IMC學到的訪談和調研技巧，也寫了一份策略給國合處，運作一個學期，便交由政大宿服會經營，成功經營至今。",
             img: "./img/case/case1/num.jpg",
             details: [
               "Discover：政大是個多語學校，但身邊的外籍生和本國生很難有交集，而校內的語文交換管道十分麻煩，甚至需要報名與繳費。",
@@ -119,7 +109,7 @@ new Vue({
           {
             title: "二、Design Thinking 設計思考",
             descript:
-              "lorem成品是在大二時，我成立了國際角落；第二次接觸「設計思考」，我發現我要做的東西。第三次，我在工作中發現了一些需求，我搜集了資料並發想了「side project共創所",
+              "這堂課很大幅度的改變我對職涯的選擇。我一向喜歡個體心理學、消費者心理、和行為經濟學，而「設計思考」是一種讓研究實用化的思考模式。在跑過完整的使用者研究流程後，同時決定了我日後往UI/UX的規劃",
             img: "./img/case/case2/num.jpg",
             details: [
               "進行蹲點觀察和深訪：人們在疫情時社群用得更頻繁，但關係更加疏離，學校社團只招收到比往年少一半的人，很多小社幾乎沒有新人。許多人開始放棄例行事，不去運動、不去教會、不去練球、不去k書。",
@@ -131,7 +121,7 @@ new Vue({
           {
             title: "三、Side Project 共創所",
             descript:
-              "lorem成品是在大二時，我成立了國際角落；第二次接觸「設計思考」，我發現我要做的東西。第三次，我在工作中發現了一些需求，我搜集了資料並發想了「side project共創所",
+              "這是我的side project。在第一份工作時，我發現軟體工程師社團一些有趣的痛點，並藉此進行訪談和調查，訂定了目標「side project 共創所」- 媒合設計師、工程師、PM的平台，創造有價值的side project。（在prototype階段）",
             img: "./img/case/case3/num.jpg",
             details: [
               "工程師有side project需求，但傾向獨立作業，美感與易用性偏低",
@@ -143,7 +133,7 @@ new Vue({
           {
             title: "一、Maynooth e-commerce website",
             descript:
-              "我抽空上了udemy知名的UI/UX課程，並製作出一個電商網站的原型 。因為TA被設定為退休的年長女性，我在這個prototype內加入了大量的結帳確認頁面，字體盡量放大，也採用比較溫暖的色調。",
+              "我抽空上了udemy知名的UI/UX課程，並製作出一個電商網站的原型。將adobe XD摸得更加熟練，也對於UI/UX設計流程有更深層的認識。因為TA被設定為退休的年長女性，我在這個prototype內加入了大量的結帳確認頁面，字體盡量放大，也採用比較溫暖的色調。",
             img: "./img/case/case4/num.jpg",
           },
         ],

@@ -86,13 +86,16 @@ body {
     margin-bottom: 2rem;
   }
 }
-
+.title-box p {
+  letter-spacing: 5px !important;
+}
 .section-features {
   & .heading-secondary {
     color: #fff;
   }
   & .title-box p {
     color: #fff6a9d6;
+    letter-spacing: 5px;
   }
 
   & .title-box .secondary-icon {
@@ -103,6 +106,7 @@ body {
   color: #000000a3;
   text-transform: uppercase;
   display: inline-block;
+  letter-spacing: 1px;
 }
 
 .fa-map-marker {
@@ -126,6 +130,10 @@ body {
     color: $color-primary-dark;
     letter-spacing: 1px;
   }
+}
+.abi-case-img {
+  width: 100%;
+  margin: 5rem auto;
 }
 .section-coding_p .abi-title__num {
   z-index: 1;
