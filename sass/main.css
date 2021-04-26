@@ -242,6 +242,7 @@ body {
 @media (max-width: 56.25em) {
   .heading-secondary {
     font-size: 4rem;
+    letter-spacing: 5px;
   }
 }
 
@@ -305,6 +306,12 @@ body {
   letter-spacing: 2px;
 }
 
+@media (max-width: 56.25em) {
+  .abi-title {
+    text-align: center;
+  }
+}
+
 .abi-title__num {
   position: absolute;
   font-size: 44rem;
@@ -319,6 +326,13 @@ body {
 .abi-title + small {
   color: #ff7730;
   letter-spacing: 1px;
+}
+
+@media (max-width: 56.25em) {
+  .abi-title + small {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .abi-case-img {
@@ -980,8 +994,8 @@ body {
 .card__side {
   background-image: -webkit-gradient(linear, right #ff7730 #f7c318, );
   background-image: linear-gradient(to right #ff7730 #f7c318);
-  height: 33rem;
-  width: 33rem;
+  height: 30rem;
+  width: 30rem;
   -webkit-transition: all 0.8s ease;
   transition: all 0.8s ease;
   position: absolute;
@@ -1293,6 +1307,16 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+@media (max-width: 56.25em) {
+  .icon-container__instruction {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 3rem;
+  }
 }
 
 .icon-container__instruction li {

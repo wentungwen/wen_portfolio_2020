@@ -58,6 +58,7 @@ body {
 
   @include rwd(tab-port) {
     font-size: 4rem;
+    letter-spacing: 5px;
   }
 
   &:hover {
@@ -115,6 +116,10 @@ body {
 .abi-title {
   color: $color-primary-dark;
   letter-spacing: 2px;
+
+  @include rwd(tab-port) {
+    text-align: center;
+  }
 
   &__num {
     position: absolute;

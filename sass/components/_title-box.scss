@@ -41,7 +41,11 @@
     flex-direction: row;
     display: flex;
     justify-content: flex-end;
-    // font-size: 1.1rem;
+
+    @include rwd(tab-port) {
+      flex-direction: column;
+      margin-top: 3rem;
+    }
 
     & li {
       padding: 0 0.8rem;
