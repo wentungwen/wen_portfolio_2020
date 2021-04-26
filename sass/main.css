@@ -265,6 +265,7 @@ body {
 
 .paragraph {
   font-size: 1.6rem;
+  margin: 1rem 0;
 }
 
 .paragraph:not(:last-child) {
@@ -569,8 +570,7 @@ body {
   outline: none;
 }
 
-.case-study .case-study2,
-.case-study .case-study1 {
+.case-study .case-study2 {
   background-color: #444444d9;
   color: #fff;
   padding: 10rem 0;
@@ -579,12 +579,18 @@ body {
   margin: 10rem 0;
 }
 
-.case-study .case-study2 .case-study2-1,
-.case-study .case-study2 .case-study1-1,
-.case-study .case-study1 .case-study2-1,
-.case-study .case-study1 .case-study1-1 {
+.case-study .case-study2 .case-study2-1 {
   -webkit-transform: skewY(-6deg);
           transform: skewY(-6deg);
+}
+
+.case-study .case-study1 {
+  background-color: #444444d9;
+  color: #fff;
+  padding: 23rem 0 10rem;
+  margin: 10rem 0 -14rem;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 10%);
+          clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 10%);
 }
 
 .case-study .case-study3 {
@@ -596,10 +602,6 @@ body {
   letter-spacing: 1px;
 }
 
-.case-study ul li strong {
-  color: #f7c318;
-}
-
 .case-study h2 {
   color: #f7c318;
 }
@@ -607,6 +609,10 @@ body {
 .case-study p {
   margin: 1rem 0;
   letter-spacing: 1px;
+}
+
+.case-study strong {
+  color: #f7c318;
 }
 
 .swiper-container {
@@ -700,8 +706,18 @@ body {
           animation-fill-mode: backwards;
 }
 
+.btn.btn-text {
+  border: 2px solid;
+}
+
+.btn.btn-text.btn-about {
+  width: 100%;
+  text-align: center;
+}
+
 .btn-text {
   margin: 0.2rem 0;
+  float: right;
 }
 
 .btn-text:link, .btn-text:visited {
@@ -1640,8 +1656,8 @@ nav.nav-mobile .nav-mobile__container .bar {
 
 .header-case {
   height: 80vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(68, 25, 0, 0.472)), color-stop(rgba(255, 119, 48, 0.8)), to(rgba(247, 195, 24, 0.8))), url(../img/hero.jpg);
-  background-image: linear-gradient(to right bottom, rgba(68, 25, 0, 0.472), rgba(255, 119, 48, 0.8), rgba(247, 195, 24, 0.8)), url(../img/hero.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(68, 25, 0, 0.472)), color-stop(rgba(255, 119, 48, 0.8)), to(rgba(247, 195, 24, 0.8))), url(../img/case/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(68, 25, 0, 0.472), rgba(255, 119, 48, 0.8), rgba(247, 195, 24, 0.8)), url(../img/case/hero.jpg);
 }
 
 @media (max-width: 56.25em) {

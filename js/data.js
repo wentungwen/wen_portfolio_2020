@@ -28,13 +28,9 @@ new Vue({
     about: [
       {
         titleName: "Front-end developer",
-        descript1: `我是一名前端設計師，我可以熟練的使用Sass和Bootstrap刻版、處理動畫、串接API、使用Git和npm，並且十分熟悉BEM設計原則和基本的MVC。`,
-        descript2: `對於 Javascript 的掌握度，我有串接過 exchangeRate 網站和 mealDB 等等的api，並做過表單驗證。`,
       },
       {
         titleName: "web designer",
-        descript1: `我很早就對網頁十分熱愛，大一時選修了政大唯一一門網頁設計課，大三時用WordPress架出人生第一個網站並上線，畢業後婉拒了奧美的面試邀請，選擇先從網頁設計做起，真正進入web這個行業。`,
-        descript2: `我很喜歡思考與解決問題，擁有行銷和使用者體驗背景，曾在4A廣告公司策略部實習。如果你正在找一名擁有行銷背景和美感的前端工程師，歡迎寄信給我!`,
       },
     ],
 
@@ -121,7 +117,7 @@ new Vue({
             ],
           },
           {
-            title: "二、Design Thinking設計思考",
+            title: "二、Design Thinking 設計思考",
             descript:
               "lorem成品是在大二時，我成立了國際角落；第二次接觸「設計思考」，我發現我要做的東西。第三次，我在工作中發現了一些需求，我搜集了資料並發想了「side project共創所",
             img: "./img/case/case2/num.jpg",
@@ -133,7 +129,7 @@ new Vue({
             ],
           },
           {
-            title: "三、Side Project共創所",
+            title: "三、Side Project 共創所",
             descript:
               "lorem成品是在大二時，我成立了國際角落；第二次接觸「設計思考」，我發現我要做的東西。第三次，我在工作中發現了一些需求，我搜集了資料並發想了「side project共創所",
             img: "./img/case/case3/num.jpg",
@@ -158,7 +154,7 @@ new Vue({
         sub: "Coding (Js)",
         sub2: "寫code最享受的地方，就是讀懂工程師的心",
         descript:
-          "我可以獨立寫出一個有RWD的完整網站。我很熟悉切版、RWD、css動畫和基本Javascript，我也串接過open api，使用框架（Vue.js）進行前後端分離，使用git進行版本控管。Coding幫助我更能了解前端工程師的作業流程，也讓我可以在行銷、設計、和工程思維中自由轉換，蹦出新火花。",
+          "Coding 幫助我更能了解前端工程師的作業流程，也讓我可以在行銷、設計、和工程思維中自由轉換，蹦出新火花。我可以獨立寫出一個有RWD的完整網站。我很熟悉切版、RWD、css動畫和基本Javascript，我也串接過open api，使用框架（Vue.js）進行前後端分離，使用git進行版本控管。",
       },
       {
         num: "3",

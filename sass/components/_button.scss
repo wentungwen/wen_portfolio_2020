@@ -51,16 +51,22 @@
     animation-fill-mode: backwards;
   }
 }
-
+.btn.btn-text {
+  border: 2px solid;
+  &.btn-about {
+    width: 100%;
+    text-align: center;
+  }
+}
 .btn-text {
   margin: 0.2rem 0;
+  float: right;
   &:link,
   &:visited {
     font-size: $default-font-size;
     color: $color-primary;
     text-decoration: none;
     display: inline-block;
-    // border-bottom: 1px solid $color-primary;
     padding: 1rem 1.5rem;
     transition: 0.2s;
 

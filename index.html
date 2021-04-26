@@ -65,16 +65,8 @@
           <i class="icon-basic-diamonds secondary-icon"></i>
           <p>{{descript[0]}}</p>
         </div>
-        <div class="row">
-          <div class="col-1-of-3">
-            <h2 class="u-margin-bottom-small block-text">
-              {{about[0].titleName}}
-            </h2>
-            <p class="paragraph">{{about[0].descript1}}</p>
-            <p class="paragraph">{{about[0].descript2}}</p>
 
-            <!-- <a href="#" class="btn-text">Learn more &rarr;</a> -->
-          </div>
+        <div class="row">
           <div class="col-1-of-3">
             <div class="card">
               <div class="card__side card__side--front">
@@ -107,13 +99,43 @@
                 </div>
               </div>
             </div>
+            <a href="#" class="btn btn-text btn-about"
+              >看案例 case study&nbsp; <i class="fas fa-arrow-right"></i
+            ></a>
           </div>
-          <div class="col-1-of-3">
+          <div class="col-2-of-3 u-margin-bottom-big">
             <h2 class="u-margin-bottom-small block-text">
+              擁有行銷背景的前端設計師
+            </h2>
+            <p class="paragraph">
+              你好，我是溫文彤，政大廣告系畢業，從事網頁設計，我所擁有的能力可以簡單分述如下：
+            </p>
+            <p class="paragraph">
+              <strong> 行銷方面：</strong
+              >在學時寫過多項廣告策略，如Vast&Hazy、統一豆漿、Canon的IMC整合行銷策略。大四在麥肯廣告集團策略部實習。主要工作為奢侈品與快消品的質化量化調研，如奧迪、一匙靈洗衣精、皇家禮炮等多種酒類。<br />
+            </p>
+            <p class="paragraph">
+              <strong>設計方面：</strong
+              >擔任政大大學雜誌編輯，並多次接壁畫、地板畫案子。在第一份工作時使用wordpress製作八個旅宿網站，並且大量製作票購網的商品圖，提升設計概念與基礎。
+            </p>
+            <p class="paragraph">
+              <strong>程式方面：</strong
+              >我可以熟練的使用Sass和Bootstrap切版（網頁與RWD）、處理動畫、串接API、使用Git和npm，熟悉BEM設計原則和基本的MVC。此個人網站是用scss進行切版與動畫，搭配vue.js資料分離。
+            </p>
+            <p><strong>語言方面：IELTS 7.0</strong></p>
+
+            <!-- <div class="divider"></div> -->
+            <h2 class="u-margin-bottom-small u-margin-top-med block-text">
               {{about[1].titleName}}
             </h2>
-            <p class="paragraph">{{about[1].descript1}}</p>
-            <p class="paragraph">{{about[1].descript2}}</p>
+            <p class="paragraph">
+              我是在臺南鄉下長大的孩子，爬樹、撿鴨糞、抓青蛙灌蟋蟀、控窯烤蝸牛是我的日常，這些回憶讓我長大後保有赤子之心，且事事充滿好奇。我很喜歡解決問題與實作。<br />
+              小學時，我在書上讀到精油蒸餾法，於是和弟弟去偷剪鄰居的迷迭香，搗碎後在田裡堆土窯「蒸餾」，做了一罐黏稠的「香水」送給媽媽。
+            </p>
+            <p>
+              長大後，這份好奇心轉往探索各領域的知識。在政大，曾經因為太渴望聽某名教授的課，無奈沒有商院資格不准旁聽，我就躲在最後一排偷聽。<br />
+              百般探索之後，我特別喜歡消費者心理學、藝術、與社會學，也有幸在快畢業時接觸了設計思考、使用者體驗和服務設計。在閱讀過《設計思考改變世界》和《設計思考全攻略》等等的書籍後，我決定要進入與此相關的UI/UX領域。
+            </p>
           </div>
         </div>
       </section>
@@ -204,51 +226,33 @@
             </div>
           </div>
         </div>
-        <!-- case 1 corner -->
+        <!-- case 1 maynooth  -->
         <div class="row">
-          <div class="col-1-of-3">
+          <div class="col-1-of-4">
             <img
-              :src="ability[0].case[0].img"
-              :alt="ability[0].case[0].title"
+              :src="ability[0].case[3].img"
+              :alt="ability[0].case[3].title"
               class="case-img"
             />
           </div>
-          <div class="col-2-of-3">
+          <div class="col-3-of-4">
             <p>
-              <strong>{{ability[0].case[0].title}}</strong>
-              <br />{{ability[0].case[0].descript}}
+              <strong>{{ability[0].case[3].title}}</strong>
+              <br />{{ability[0].case[3].descript}}
             </p>
-            <div class="icon-container">
-              <li>
-                <i class="fas fa-street-view"></i>
-                <div>{{ability[0].case[0].details[0]}}</div>
-              </li>
-              <li>
-                <i class="fas fa-question-circle"></i>
-                <div>{{ability[0].case[0].details[1]}}</div>
-              </li>
-              <li>
-                <i class="fas fa-lightbulb"></i>
-                <div>{{ability[0].case[0].details[2]}}</div>
-              </li>
-              <li>
-                <i class="fas fa-flag"></i>
-                <div>{{ability[0].case[0].details[3]}}</div>
-              </li>
-            </div>
           </div>
         </div>
 
         <!-- case 2 design-thinking -->
         <div class="row">
-          <div class="col-1-of-3">
+          <div class="col-1-of-4">
             <img
               :src="ability[0].case[1].img"
               :alt="ability[0].case[1].title"
               class="case-img"
             />
           </div>
-          <div class="col-2-of-3">
+          <div class="col-3-of-4">
             <p>
               <strong>{{ability[0].case[1].title}}</strong>
               <br />{{ability[0].case[1].descript}}
@@ -275,14 +279,14 @@
         </div>
         <!-- case 3 side project  -->
         <div class="row">
-          <div class="col-1-of-3">
+          <div class="col-1-of-4">
             <img
               :src="ability[0].case[2].img"
               :alt="ability[0].case[2].title"
               class="case-img"
             />
           </div>
-          <div class="col-2-of-3">
+          <div class="col-3-of-4">
             <p>
               <strong>{{ability[0].case[2].title}}</strong>
               <br />{{ability[0].case[2].descript}}
@@ -307,25 +311,43 @@
             </div>
           </div>
         </div>
-        <!-- case 4 maynooth  -->
+        <!-- case 1 corner -->
         <div class="row">
-          <div class="col-1-of-3">
+          <div class="col-1-of-4">
             <img
-              :src="ability[0].case[3].img"
-              :alt="ability[0].case[3].title"
+              :src="ability[0].case[0].img"
+              :alt="ability[0].case[0].title"
               class="case-img"
             />
           </div>
-          <div class="col-2-of-3">
+          <div class="col-3-of-4">
             <p>
-              <strong>{{ability[0].case[3].title}}</strong>
-              <br />{{ability[0].case[3].descript}}
+              <strong>{{ability[0].case[0].title}}</strong>
+              <br />{{ability[0].case[0].descript}}
             </p>
+            <div class="icon-container">
+              <li>
+                <i class="fas fa-street-view"></i>
+                <div>{{ability[0].case[0].details[0]}}</div>
+              </li>
+              <li>
+                <i class="fas fa-question-circle"></i>
+                <div>{{ability[0].case[0].details[1]}}</div>
+              </li>
+              <li>
+                <i class="fas fa-lightbulb"></i>
+                <div>{{ability[0].case[0].details[2]}}</div>
+              </li>
+              <li>
+                <i class="fas fa-flag"></i>
+                <div>{{ability[0].case[0].details[3]}}</div>
+              </li>
+            </div>
           </div>
         </div>
         <div class="row">
           <a href="#" class="btn btn-text"
-            >More details&nbsp; <i class="fas fa-arrow-right"></i
+            >case study&nbsp; <i class="fas fa-arrow-right"></i
           ></a>
         </div>
       </section>

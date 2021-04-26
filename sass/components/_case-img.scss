@@ -95,18 +95,23 @@
   }
 }
 .case-study {
-  & .case-study2,
-  & .case-study1 {
+  & .case-study2 {
     background-color: #444444d9;
     color: #fff;
     padding: 10rem 0;
     transform: skewY(6deg);
     margin: 10rem 0;
 
-    & .case-study2-1,
-    & .case-study1-1 {
+    & .case-study2-1 {
       transform: skewY(-6deg);
     }
+  }
+  & .case-study1 {
+    background-color: #444444d9;
+    color: #fff;
+    padding: 23rem 0 10rem;
+    margin: 10rem 0 -14rem;
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 10%);
   }
 
   & .case-study3 {
@@ -115,9 +120,6 @@
   & ul li {
     list-style: none;
     letter-spacing: 1px;
-    & strong {
-      color: $color-primary;
-    }
   }
   & h2 {
     color: $color-primary;
@@ -125,6 +127,9 @@
   & p {
     margin: 1rem 0;
     letter-spacing: 1px;
+  }
+  & strong {
+    color: $color-primary;
   }
 }
 .swiper-container {
