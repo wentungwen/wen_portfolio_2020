@@ -2,6 +2,7 @@
   width: 100%;
   box-shadow: 0 0 3rem 1rem #00000024;
   border-radius: 100%;
+  transform: scale(0.8);
 
   @include rwd(tab-port) {
     width: 10rem;

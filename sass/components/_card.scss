@@ -9,6 +9,11 @@
     margin: 4rem 0;
   }
 
+  &__price-en {
+    font-family: "Niconne", cursive;
+    font-size: 1.2rem;
+  }
+
   &__side {
     background-image: linear-gradient(
       to right $color-primary-dark $color-primary
