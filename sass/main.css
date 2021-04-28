@@ -756,9 +756,16 @@ body {
   text-align: center;
 }
 
+.case-study1 .btn.btn-text.btn-about {
+  width: auto;
+  cursor: pointer;
+}
+
 .btn-text {
-  margin: 0.2rem 0;
+  margin: 0.2rem 0 0.5rem;
   float: right;
+  cursor: pointer;
+  letter-spacing: 1px;
 }
 
 .btn-text:link, .btn-text:visited {
@@ -1700,7 +1707,7 @@ nav.nav-mobile .nav-mobile__container .bar {
 }
 
 .header-case {
-  height: 80vh;
+  height: 90vh;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(68, 25, 0, 0.472)), color-stop(rgba(255, 119, 48, 0.8)), to(rgba(247, 195, 24, 0.8))), url(../img/case/hero.jpg);
   background-image: linear-gradient(to right bottom, rgba(68, 25, 0, 0.472), rgba(255, 119, 48, 0.8), rgba(247, 195, 24, 0.8)), url(../img/case/hero.jpg);
 }
