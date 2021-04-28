@@ -94,19 +94,19 @@ new Vue({
           {
             title: "三、Side Project 共創所",
             descript:
-              "這是我的side project。在第一份工作時，我發現軟體工程師社團一些有趣的痛點，並藉此進行訪談和調查，訂定了目標「side project 共創所」- 媒合設計師、工程師、PM的平台，創造有價值的side project。（在prototype階段）",
+              "這是在第一份工作就職中的side project。我發現軟體工程師社團一些有趣的痛點，並藉此進行訪談和調查，訂定了目標「side project 共創所」- 媒合設計師、工程師、PM的平台，核心價值為創造有價值的side project。（目前在prototype階段）",
             img: "./img/case/case3/num.jpg",
             details: [
               "工程師有side project需求，但傾向獨立作業，美感與易用性偏低",
-              "做完市場與競品分析，與十五個工程師和設計師深度訪談，並與相關粉專洽詢後，發現因為找人阻力過大，如社團人數太多、沒有完整產品構想而不敢發文。persona為初階偏中階工程師，已有相當技能，試圖培養新技能以找到更好的工作，可營利為其次。",
-              "將媒合的阻力變小，且必須可以管理，打造一個媒合設計師、工程師、PM的平台。",
+              "做完市場與競品分析，與十五個工程師和設計師深度訪談，並與相關粉專洽詢後，發現因為找人阻力過大，如社團人數太多、沒有完整產品構想而不敢發文。",
+              "必須將媒合的阻力變小，且必須可以管理，打造一個媒合設計師、工程師、PM的平台。persona為初階偏中階工程師，已有相當技能，試圖培養新技能以找到更好的工作，可營利為其次。",
               "進行測試優化：加上tag，取消押金制度，加上可行的side project題目留住使用者",
             ],
           },
           {
             title: "一、Maynooth e-commerce website",
             descript:
-              "我抽空上了udemy知名的UI/UX課程，並製作出一個電商網站的原型。將adobe XD摸得更加熟練，也對於UI/UX設計流程有更深層的認識。因為TA被設定為退休的年長女性，我在這個prototype內加入了大量的結帳確認頁面，字體盡量放大，也採用比較溫暖的色調。",
+              "我抽空上了Udemy知名的UI/UX課程，並製作出一個電商網站的原型。除了將adobe XD摸得更加熟練，也對於UI/UX設計流程有更深層的認識。因為TA被設定為退休的年長女性，我在這個prototype內加入了大量的結帳確認頁面，字體盡量放大，也採用比較溫暖的色調。",
             img: "./img/case/case4/num.jpg",
           },
         ],
@@ -117,15 +117,18 @@ new Vue({
         sub: "Coding (Js)",
         sub2: "寫code最享受的地方，就是讀懂工程師的心",
         descript:
-          "Coding 幫助我更能了解前端工程師的作業流程，也讓我可以在行銷、設計、和工程思維中自由轉換，蹦出新火花。我可以獨立寫出一個有RWD的完整網站。我很熟悉切版、RWD、css動畫和基本Javascript，我也串接過open api，使用框架（Vue.js）進行前後端分離，使用git進行版本控管。",
+          "我可以獨立寫出一個有RWD的完整網站。我很熟悉切版、RWD、css動畫和基本Javascript，我也串接過open api，使用框架（Vue.js）進行前後端分離，使用git進行版本控管。",
+        descript2:
+          "Coding 幫助我更能了解前端工程師的作業流程，也讓我可以在行銷、設計、和工程思維中自由轉換，蹦出新火花。",
       },
       {
         num: "3",
         title: "網頁設計",
         sub: "Web design",
         sub2: "客戶想要的不是最美，而是最適合",
-        descript:
-          "分析客戶品牌調性，並設計出最貼合其形象的網站。這是我使用wordpress獨立設計與架設的網頁，經過跟客戶和主管來回溝通，我對於網頁字體、排版、動畫、頁面配置、網頁效能優化與使用體驗有相當的實作經驗，也對客戶的需求更加了解。",
+        descript: "我可以分析客戶品牌調性，並設計出最貼合其形象的網站。",
+        descript2:
+          "這是我使用wordpress獨立設計與架設的網頁，經過跟客戶和主管來回溝通。我對於網頁字體、排版、動畫、頁面配置、網頁效能優化與使用體驗有相當的實作經驗，也對客戶的需求更加了解。",
       },
     ],
 
@@ -135,7 +138,7 @@ new Vue({
         descript:
           "最難的部分需要判斷ball、bricks、paddle的各種反彈的狀況，並將function適當封裝好，也練習到很多canvas的用法",
         img: "url(./img/coding-pic/02.jpg)",
-        link: "/projects/breakout_game",
+        link: "./projects/breakout_game",
       },
       {
         title: "Exchange Rate Calcutor",
@@ -149,27 +152,27 @@ new Vue({
         descript:
           "將預設字串儲存在陣列，並一一檢查輸入字串是否相符，並顯示svg的軀幹，練習邏輯分析的能力",
         img: "url(./img/coding-pic/03.jpg)",
-        link: "/projects/hangman_game",
+        link: "./projects/hangman_game",
       },
       {
         title: "Note app",
         descript:
           "手刻的便利貼app，有編輯、儲存、刪除的功能，可以存在localStorage",
         img: "url(./img/coding-pic/04.jpg)",
-        link: "/projects/note_app",
+        link: "./projects/note_app",
       },
       {
         title: "Drawing app",
         descript: "小畫家的基本型，用HTML5的canvas標籤製作",
         img: "url(./img/coding-pic/05.jpg)",
-        link: "/projects/drawing_app",
+        link: "./projects/drawing_app",
       },
       {
         title: "Expense Tracker",
         descript:
           "輸入花費的金額（前方必須加上＋-），會自動記帳，可以存在localStorage",
         img: "url(./img/coding-pic/06.jpg)",
-        link: "/projects/expense_tracker",
+        link: "./projects/expense_tracker",
       },
     ],
     designs: [

@@ -41,6 +41,9 @@
 
     &--back {
       transform: rotateY(180deg);
+      @include rwd(tab-port) {
+        display: none;
+      }
 
       &-1 {
         background-image: linear-gradient(
@@ -95,7 +98,7 @@
   }
   &__heading {
     padding: 5px;
-    font-size: 6.8rem;
+    font-size: 6rem;
     font-weight: 100;
     color: #fff;
     text-transform: uppercase;
@@ -103,7 +106,7 @@
     display: inline-block;
     position: absolute;
     text-align: right;
-    top: 16rem;
+    top: 17rem;
     right: 12rem;
     width: 73%;
   }

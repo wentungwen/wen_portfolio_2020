@@ -1042,6 +1042,12 @@ body {
           transform: rotateY(180deg);
 }
 
+@media (max-width: 56.25em) {
+  .card__side--back {
+    display: none;
+  }
+}
+
 .card__side--back-1 {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#3b3b3b), to(#ff7730));
   background-image: linear-gradient(to right bottom, #3b3b3b, #ff7730);
@@ -1082,7 +1088,7 @@ body {
 
 .card__heading {
   padding: 5px;
-  font-size: 6.8rem;
+  font-size: 6rem;
   font-weight: 100;
   color: #fff;
   text-transform: uppercase;
@@ -1090,7 +1096,7 @@ body {
   display: inline-block;
   position: absolute;
   text-align: right;
-  top: 16rem;
+  top: 17rem;
   right: 12rem;
   width: 73%;
 }
