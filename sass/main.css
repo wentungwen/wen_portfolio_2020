@@ -627,6 +627,13 @@ body {
           clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 10%);
 }
 
+@media (max-width: 56.25em) {
+  .case-study .case-study1 {
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 5%);
+            clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 5%);
+  }
+}
+
 .case-study .case-study3 {
   padding: 10rem 0 5rem;
 }

@@ -7,6 +7,10 @@ const swiper = new Swiper(".swiper-container", {
   //   pagination: {
   //     el: ".swiper-pagination",
   //   },
+  autoplay: {
+    delay: 5000,
+    stopOnLastSlide: true,
+  },
 
   // Navigation arrows
   navigation: {
