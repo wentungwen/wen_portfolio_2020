@@ -1,28 +1,28 @@
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translate(100px);
+    transform: translateY(100px);
   }
   80% {
-    transform: translate(-10px);
+    transform: translateY(-10px);
   }
   100% {
     opacity: 1;
-    transform: translate(0);
+    transform: translateY(0);
     /* translate 0代表原位 */
   }
 }
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translate(-100px);
+    transform: translateY(-100px);
   }
   80% {
-    transform: translate(10px);
+    transform: translateY(10px);
   }
   100% {
     opacity: 1;
-    transform: translate(0);
+    transform: translateY(0);
     /* translate 0代表原位 */
   }
 }

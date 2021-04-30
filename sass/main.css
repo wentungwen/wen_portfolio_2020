@@ -56,17 +56,17 @@ body {
 @-webkit-keyframes moveInRight {
   0% {
     opacity: 0;
-    -webkit-transform: translate(100px);
-            transform: translate(100px);
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
   }
   80% {
-    -webkit-transform: translate(-10px);
-            transform: translate(-10px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     /* translate 0代表原位 */
   }
 }
@@ -74,17 +74,17 @@ body {
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    -webkit-transform: translate(100px);
-            transform: translate(100px);
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
   }
   80% {
-    -webkit-transform: translate(-10px);
-            transform: translate(-10px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     /* translate 0代表原位 */
   }
 }
@@ -92,17 +92,17 @@ body {
 @-webkit-keyframes moveInLeft {
   0% {
     opacity: 0;
-    -webkit-transform: translate(-100px);
-            transform: translate(-100px);
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
   }
   80% {
-    -webkit-transform: translate(10px);
-            transform: translate(10px);
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     /* translate 0代表原位 */
   }
 }
@@ -110,17 +110,17 @@ body {
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    -webkit-transform: translate(-100px);
-            transform: translate(-100px);
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
   }
   80% {
-    -webkit-transform: translate(10px);
-            transform: translate(10px);
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     /* translate 0代表原位 */
   }
 }
