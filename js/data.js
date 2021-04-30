@@ -199,7 +199,7 @@ new Vue({
       {
         title: "水美溫泉會館",
         img: "url(./img/website-pic/07.png)",
-        link: "http://apm021.surehigh.com.tw/sweetme/",
+        link: "https://www.sweetme.com.tw/",
       },
       {
         title: "呆水溫泉",
