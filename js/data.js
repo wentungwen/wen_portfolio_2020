@@ -5,7 +5,7 @@ new Vue({
     sub: "hello world!",
   },
 });
-
+ 
 new Vue({
   el: "#main",
   data: {
